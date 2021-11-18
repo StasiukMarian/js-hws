@@ -1,0 +1,12 @@
+.posts-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.post-card{
+    margin-bottom: 10px;
+    width: 18%;
+    border: 1px solid grey;
+    padding: 5px;
+}

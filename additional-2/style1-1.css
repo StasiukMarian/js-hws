@@ -1,0 +1,29 @@
+.user-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 10px;
+}
+.user-block {
+    width: 45%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    row-gap: 5px;
+ }
+.address-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
