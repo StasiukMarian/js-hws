@@ -59,8 +59,9 @@
 // function avgArray(arr){
 // for (let i = 0; i < arr.length; i++ ){
 //     total +=arr[i]
-//     avg = total/arr.length
+//
 //     }
+//     avg = total/arr.length
 // }
 // avgArray([5,10,15])
 // console.log(avg)
@@ -111,8 +112,8 @@
 // function reverse (){
 //     let arr = [1,2,3]
 //     let arr1 =[]
-//     for (let i = 0 ; i < arr.length; i++){
-//         arr1 = arr.reverse()
+//     for (let i = arr.length - 1, j=0   ; i >= 0; i--, j++){
+//         arr1.push(arr[i])
 //     }
 //     return arr1
 // }
