@@ -15,15 +15,15 @@
 //   [2,3,4,5]
 //   результат
 //   [3,5,7,9]
-// let arr3 = []
-// function sumArr(arr1, arr2) {
-//     for (let i = 0, j =0 ;  i < arr1.length; i++, j++){
-//         arr3.push(arr1[i]+arr2[j])
-//         }
-//     return arr3
-// }
-// sumArr([1,2,3,4], [2,3,4,5])
-// console.log(arr3)
+    let arr3 = []
+    function sumArr(arr1, arr2) {
+        for (let i = 0, j =0 ;  i < arr1.length; i++, j++){
+            arr3.push(arr1[i]+arr2[j])
+            }
+        return arr3
+    }
+    sumArr([1,2,3,4], [2,3,4,5])
+    console.log(arr3)
 
 // 3.- Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 //   EXAMPLE:

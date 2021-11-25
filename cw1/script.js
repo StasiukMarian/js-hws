@@ -68,5 +68,11 @@ console.log(arrayBooks[0],arrayBooks[1])
     k = Math.sqrt((n**2)+(m**2));
     console.log(k) // Гіпотенуза = 5
 
+let div =document.querySelectorAll('.test')
+console.log(div);
+for (let i = 0 ; i < div.length ;i++){
+    console.log(div[i]);
+    div[i].style.background = 'red';
+    div[i].style.color = '#fff';
 
-
+}

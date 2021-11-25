@@ -14,7 +14,7 @@
 // 			побудувати структуру по шаблону template2.1 & template2.2. Зробити адекватну стилізацію.
 // 			Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон.
 // 		    Шаблон застосувати до кожного об'єкта в масиві
-
+//
 let simpsons = [
     {
         name: 'Bart',
@@ -53,10 +53,12 @@ let simpsons = [
     },
 ];
 //template2.1
-
 // for (let person of simpsons){
-//     document.write(`<div class="persons">${person.name} ${person.surname} ${person.age} ${person.info} <img src="${person.photo}" width="200px" height="300px" alt=""> }</div>`)
+//     document.write(`<div class="persons">`)
+//             document.write(`${person.name} - ${person.surname} - ${person.info}  <img src="${person.photo}" alt="">`)
+//     document.write(`</div>`)
 // }
+
 
 //template2.2
 
@@ -72,38 +74,39 @@ let simpsons = [
 // Використовуючи данні з масиву, за допомоги document.write та циклу
 //побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
 //Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
-let products = [
-    {
-        title: 'milk',
-        price: 22,
-        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
-    },
-    {
-        title: 'juice',
-        price: 27,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
-    },
-    {
-        title: 'tomato',
-        price: 47,
-        image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
-    },
-    {
-        title: 'tea',
-        price: 15,
-        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
-    },
-];
+// let products = [
+//     {
+//         title: 'milk',
+//         price: 22,
+//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+//     },
+//     {
+//         title: 'juice',
+//         price: 27,
+//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//     },
+//     {
+//         title: 'tomato',
+//         price: 47,
+//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//     },
+//     {
+//         title: 'tea',
+//         price: 15,
+//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+//     },
+// ];
+//
+//     for (let p of products){
+//         document.write(
+//             `<div class="wrap">
+//                    <div class="product-card"
+//                     <h3 class="product-title">${p.title} ${p.price}</h3>
+//
+//                     <img src="${p.image}" alt="" class="product-image">
+//
+//                    </div>
+//
+//             </div>`)
+//     }
 
-    for (let p of products){
-        document.write(
-            `<div class="wrap">
-                   <div class="product-card"
-                    <h3 class="product-title">${p.title} ${p.price}</h3>
-       
-                    <img src="${p.image}" alt="" class="product-image">
-                   
-                   </div>
-
-            </div>`)
-    }
