@@ -1,30 +1,31 @@
 // Все робити за допомоги js.
 
 // - створити блок,
-// let div = document.createElement('div')
-// //     - додати йому класи wrap, collapse, alpha, beta
-// div.classList.add('wrap','collapse','alpha','beta')
-// // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
-// div.innerText = 'Hello , world!'
-// div.style.background = 'red'
-// div.style.color = 'blue'
-// div.style.fontSize = '20px'
-// // - додати цей блок в body.
-// document.body.appendChild(div)
-// // - клонувати його повністю, та додати клон в body.
-// let divClone = div.cloneNode(true)
-// document.body.appendChild(divClone)
+let div = document.createElement('div')
+//     - додати йому класи wrap, collapse, alpha, beta
+div.classList.add('wrap','collapse','alpha','beta')
+// - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
+div.innerText = 'Hello , world!'
+div.style.background = 'red'
+div.style.color = 'blue'
+div.style.fontSize = '20px'
+// - додати цей блок в body.
+document.body.appendChild(div)
+// - клонувати його повністю, та додати клон в body.
+let divClone = div.cloneNode(true)
+document.body.appendChild(divClone)
 
 // - Є масив:
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
-//   let array =  ['Main','Products','About us','Contacts']
-//
-// let menu = document.getElementsByClassName('menu')[0]
-// for (let item of array){
-//     let li = document.createElement('li')
-//         menu.appendChild(li)
-// }
+  let array =  ['Main','Products','About us','Contacts']
+
+let menu = document.getElementsByClassName('menu')[0]
+for (let item of array){
+    let li = document.createElement('li')
+        menu.appendChild(li)
+        li.innerText = item
+}
 // - Є масив
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
