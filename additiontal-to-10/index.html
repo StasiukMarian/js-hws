@@ -5,45 +5,102 @@
     <title>Title</title>
     <style>
 
-        .square{
-            width: 200px;
-            height: 200px;
-            background: green;
-            margin-bottom: 10px;
+        /*.square{*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background: green;*/
+        /*    margin-bottom: 10px;*/
+        /*}*/
+        /*.hide {*/
+        /*    display: none;*/
+        /*}*/
+        /*.wrapper{*/
+        /*    max-width: 700px;*/
+        /*    padding: 30px;*/
+        /*    background: whitesmoke;*/
+        /*    margin: 0 auto;*/
+        /*}*/
+        /*.slider{*/
+        /*    width: 201px;*/
+        /*    height: 201px;*/
+        /*    border: 2px solid blue;*/
+        /*    margin: 0 auto;*/
+        /*    overflow: hidden;*/
+        /*}*/
+        /*.line{*/
+        /*    display: flex;*/
+        /*    width: 615px;*/
+        /*    height: 201px;*/
+        /*    background: sandybrown;*/
+        /*    position: relative;*/
+        /*}*/
+        /*.next:hover{*/
+        /*    background: blue;*/
+        /*}*/
+        /*.prev:hover{*/
+        /*    background: blue;*/
+        /*}*/
+
+        a{
+            text-decoration: none;
+            color: black;
         }
-        .hide {
-            display: none;
+        .menu-item > a{
+            font-size: 20px;
         }
-        .wrapper{
-            max-width: 700px;
-            padding: 30px;
-            background: whitesmoke;
-            margin: 0 auto;
+        li{
+            list-style: none;
         }
-        .slider{
-            width: 201px;
-            height: 201px;
-            border: 2px solid blue;
-            margin: 0 auto;
-            overflow: hidden;
+        ul{
+            margin: 0;
+            padding: 0;
         }
-        .line{
-            display: flex;
-            width: 615px;
-            height: 201px;
-            background: sandybrown;
-            position: relative;
-        }
-        .next:hover{
-            background: blue;
-        }
-        .prev:hover{
-            background: blue;
-        }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sub-menu{
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+    }
+
 
     </style>
 </head>
 <body>
+
+<ul class="menu">
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+</ul>
+
+
 <!--for 1-2 tasks-->
 <!-- <div class="square" id="square"></div>-->
 <!----for 3 task------------------------------------------->

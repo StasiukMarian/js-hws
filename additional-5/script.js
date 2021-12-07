@@ -106,3 +106,6 @@
 //     return  (str.split(stringSearch).length - 1)
 // }
 // console.log(count("Астрономия это наука о небесных объектах", "о"));
+
+
+

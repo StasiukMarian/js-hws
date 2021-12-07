@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *.wrapper{
+            max-width: 700px;
+            padding: 30px;
+            background: whitesmoke;
+            margin: 0 auto;
+        }
+        .slider{
+            width: 201px;
+            height: 201px;
+            border: 2px solid blue;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .line{
+            display: flex;
+            width: 615px;
+            height: 201px;
+            background: sandybrown;
+            position: relative;
+        }
+        .next:hover{
+            background: blue;
+        }
+        .prev:hover{
+            background: blue;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu-item > a{
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .sub-menu{
+            overflow: hidden;
+            opacity: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="#">Open me</a>
+        <ul class="sub-menu">
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">contacts</a></li>
+        </ul>
+    </li>
+</ul>
+<!-------------carousel---------------->
+<div class="wrapper">
+    <div class="slider">
+        <div class="line">
+            <img src="../additiontal-to-10/pics/Chrome.png" alt="chrome">
+            <img src="../additiontal-to-10/pics/firefox.png" alt="firefox">
+            <img src="../additiontal-to-10/pics/bee.png" alt="bee">
+        </div>
+    </div>
+    <button class="prev">Prev</button>
+    <button class="next">Next</button>
+</div>
+<!--------------------------------------->
+
+<script src="script.js"></script>
+</body>
+</html>

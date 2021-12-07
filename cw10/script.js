@@ -65,35 +65,36 @@
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
 
-let input1 = document.createElement('input');
-let input2 = document.createElement('input');
-let input3 = document.createElement('input');
-let button = document.createElement('button');
+// let input1 = document.createElement('input');
+// let input2 = document.createElement('input');
+// let input3 = document.createElement('input');
+// let button = document.createElement('button');
+//
+// button.innerText = 'Create';
+// document.body.append(input1, input2, input3, button);
+//
+// button.addEventListener('click', function () {
+//     let tr = input1.value;
+//     let td = input2.value;
+//     let enterText = input3.value;
+//
+//     function Table(tr, td, inner) {
+//
+//         let divTable = document.createElement('div');
+//         document.body.appendChild(divTable);
+//
+//         for (let i = 0; i < tr; i++) {
+//             let tr = document.createElement('tr');
+//             tr.style.border = '1px solid blue';
+//             for (let j = 0; j < td; j++) {
+//                 let td = document.createElement('td');
+//                 td.style.border = '1px solid green';
+//                 td.innerText = `${inner}`;
+//                 divTable.appendChild(tr);
+//                 tr.appendChild(td);
+//             }
+//         }
+//     }
+//     Table(tr, td, enterText);
+// })
 
-button.innerText = 'Create';
-document.body.append(input1, input2, input3, button);
-
-button.addEventListener('click', function () {
-    let tr = input1.value;
-    let td = input2.value;
-    let enterText = input3.value;
-
-    function Table(tr, td, inner) {
-
-        let divTable = document.createElement('div');
-        document.body.appendChild(divTable);
-
-        for (let i = 0; i < tr; i++) {
-            let tr = document.createElement('tr');
-            tr.style.border = '1px solid blue';
-            for (let j = 0; j < td; j++) {
-                let td = document.createElement('td');
-                td.style.border = '1px solid green';
-                td.innerText = `${inner}`;
-                divTable.appendChild(tr);
-                tr.appendChild(td);
-            }
-        }
-    }
-    Table(tr, td, enterText);
-})

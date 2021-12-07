@@ -231,47 +231,122 @@ let usersList = [
     }
 ];
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
-for (let item of usersList){
-    let wrapper = document.createElement('div')
-    wrapper.classList.add('wrapper')
-    let userInfo = document.createElement('div')
-    userInfo.classList.add('userInfo')
-    let h3Name = document.createElement('h3')
-    h3Name.innerText = `Name of user - ${item.name}`
-    let h3Username = document.createElement('h3')
-    h3Username.innerHTML =`Nickname - ${item.username}`
-    let h3Email = document.createElement('h3')
-    h3Email.innerText = `email - ${item.email}`
-    let addressWrap = document.createElement('div')
-    addressWrap.classList.add('addressWrap')
-    let address = document.createElement('div')
-    address.classList.add('address')
-    address.innerText = `city - ${item.address.city} ${item.address.zipcode} street - ${item.address.street} № ${item.address.suite}`
-    let geoAddress = document.createElement('div')
-    geoAddress.classList.add('geo')
-    geoAddress.innerText = `geoInfo : ${item.address.geo.lat} and ${item.address.geo.lng}`
-    let contacts = document.createElement('div')
-    contacts.classList.add('contacts')
-    contacts.innerText = 'Contact info : '
-    let h4Phone = document.createElement('h4')
-    h4Phone.innerText = `phone - ${item.phone}`
-    let h4Website = document.createElement('h4')
-    h4Website.innerText = `email - ${item.website}`
-    let companyWrap = document.createElement('div')
-    companyWrap.classList.add('company')
-    companyWrap.innerText = 'About my company : '
-    let h4Name = document.createElement('h4')
-    h4Name.innerText = `name : ${item.company.name}`
-    let pPhrase = document.createElement('p')
-    pPhrase.innerText = `phrase : ${item.company.catchPhrase}`
-    let pBs = document.createElement('p')
-    pBs.innerText =`specialised on ${item.company.bs}`
 
-    document.body.appendChild(wrapper)
-    wrapper.append(userInfo , addressWrap, contacts , companyWrap)
-    userInfo.append(h3Name , h3Username, h3Email )
-    addressWrap.appendChild(address)
-    address.appendChild(geoAddress)
-    contacts.append(h4Phone, h4Website)
-    companyWrap.append(h4Name, pPhrase,pBs)
+
+for (let item of usersList){
+   let div = document.createElement('div')
+    div.innerText = `${item.name} `
+    for (let item2 of item.address){
+        let div2 = document.createElement('div')
+        div.innerText = `${item2.street} `
+
+    }
+
 }
+document.body.append(div)
+
+
+
+
+
+
+// for (let item of usersList){
+//    let wrapper =  document.createElement('div')
+//     wrapper.classList.add('wrapperDiv')
+//     let divName = document.createElement('div')
+//     divName.innerText =`${item.name}`
+//     let divUsername = document.createElement('div')
+//     divUsername.innerText = `${item.username}`
+//     let divEmail = document.createElement('div')
+//     divEmail.innerText = `${item.email}`
+//     let divAdress = document.createElement('div')
+//
+//     document.body.appendChild(wrapper)
+//
+//     wrapper.append(divName,divUsername,divEmail, divAdress)
+//
+//     divAdress.appendChild(divAdressValues)
+//
+//     for (let key in item){
+//         let divAdressValues = document.createElement('div')
+//         let divStreet = document.createElement('div')
+//         divStreet.innerText = `${item.street}`
+//         let divSuite = document.createElement('div')
+//         divSuite.innerText = `${item2.suite}`
+//         let divCity = document.createElement('div')
+//         divCity.innerText = `${item2.city}`
+//         let divZipcode = document.createElement('div')
+//         divZipcode.innerText = `${item2.zipcode}`
+//         divAdressValues.append(divStreet,divSuite,divCity,divZipcode)
+//     }
+//
+//
+//
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let item of usersList){
+//     let wrapper = document.createElement('div')
+//     wrapper.classList.add('wrapper')
+//     let userInfo = document.createElement('div')
+//     userInfo.classList.add('userInfo')
+//     let h3Name = document.createElement('h3')
+//     h3Name.innerText = `Name of user - ${item.name}`
+//     let h3Username = document.createElement('h3')
+//     h3Username.innerHTML =`Nickname - ${item.username}`
+//     let h3Email = document.createElement('h3')
+//     h3Email.innerText = `email - ${item.email}`
+//     let addressWrap = document.createElement('div')
+//     addressWrap.classList.add('addressWrap')
+//     let address = document.createElement('div')
+//     address.classList.add('address')
+//     address.innerText = `city - ${item.address.city} ${item.address.zipcode} street - ${item.address.street} № ${item.address.suite}`
+//     let geoAddress = document.createElement('div')
+//     geoAddress.classList.add('geo')
+//     geoAddress.innerText = `geoInfo : ${item.address.geo.lat} and ${item.address.geo.lng}`
+//     let contacts = document.createElement('div')
+//     contacts.classList.add('contacts')
+//     contacts.innerText = 'Contact info : '
+//     let h4Phone = document.createElement('h4')
+//     h4Phone.innerText = `phone - ${item.phone}`
+//     let h4Website = document.createElement('h4')
+//     h4Website.innerText = `email - ${item.website}`
+//     let companyWrap = document.createElement('div')
+//     companyWrap.classList.add('company')
+//     companyWrap.innerText = 'About my company : '
+//     let h4Name = document.createElement('h4')
+//     h4Name.innerText = `name : ${item.company.name}`
+//     let pPhrase = document.createElement('p')
+//     pPhrase.innerText = `phrase : ${item.company.catchPhrase}`
+//     let pBs = document.createElement('p')
+//     pBs.innerText =`specialised on ${item.company.bs}`
+//
+//     document.body.appendChild(wrapper)
+//     wrapper.append(userInfo , addressWrap, contacts , companyWrap)
+//     userInfo.append(h3Name , h3Username, h3Email )
+//     addressWrap.appendChild(address)
+//     address.appendChild(geoAddress)
+//     contacts.append(h4Phone, h4Website)
+//     companyWrap.append(h4Name, pPhrase,pBs)
+// }

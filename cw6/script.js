@@ -90,15 +90,11 @@
 //    return  value.monthDuration > 5
 // })
 
-// 9.- - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
 
-// let cutString = (str, n) => {
-//     const res = [];
-//     for (let i = 0 ; i < str.length ; i++) {
-//         res.push(str.substr(0, n))
-//         str = str.slice(n)
-//     }
-//     console.log(res)
-//     return res
-// };
-// document.writeln(cutString('наслаждение', 4))
+
+
+
+
+
+
+

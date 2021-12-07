@@ -27,11 +27,26 @@ console.log(rulesList)
 
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 
-let fcRules = document.getElementsByTagName('ul')
-let fcRules1 = fcRules[0]
-console.log(fcRules1)
-let fcRulesList =fcRules1.children
-for (let listElement of fcRulesList){
-    listElement.style.color = 'red'
-    listElement.style.background = 'blue'
+// let fcRules = document.getElementsByTagName('ul')
+// let fcRules1 = fcRules[0]
+// console.log(fcRules1)
+// let fcRulesList =fcRules1.children
+// for (let listElement of fcRulesList){
+//     listElement.style.color = 'red'
+//     listElement.style.background = 'blue'
+// }
+let liList = document.querySelectorAll('ul > li')
+for (let item of liList){
+    item.style.color = 'red'
 }
+// function getCounter() {
+//     let counter = 0;
+//     return function() {
+//         return ++counter;
+//     }
+// }
+// let count = getCounter();
+// console.log(count())
+// console.log(count())
+// console.log(count())
+
