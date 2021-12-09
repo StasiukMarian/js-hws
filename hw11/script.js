@@ -15,18 +15,17 @@
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
 
-// let inp1 = document.getElementById('model')
-// let inp2 = document.getElementById('type')
-// let inp3 = document.getElementById('volume')
-// let button = document.getElementById('button')
-// let k = 'key'
-// let arr = []
-// let construct = function (model, type , volume){
-//     let obj = {model : model , type: type, volume: volume}
-//     arr.push(obj)
-//     localStorage.setItem(k,(JSON.stringify(arr)))
-// }
-// button.onclick = (e) =>{
-//     e.preventDefault()
-//     construct(inp1.value, inp2.value, inp3.value)
-// }
+let inp1 = document.getElementById('model')
+let inp2 = document.getElementById('type')
+let inp3 = document.getElementById('volume')
+let button2 = document.getElementById('button2')
+let construct = function (model, type , volume){
+    let obj = {model : model , type: type, volume: volume}
+    let cars = JSON.parse(localStorage.getItem('cars')) || []
+    cars.push(obj)
+    localStorage.setItem('cars',(JSON.stringify(cars)))
+}
+button2.onclick = (e) =>{
+    e.preventDefault()
+    construct(inp1.value, inp2.value, inp3.value)
+}

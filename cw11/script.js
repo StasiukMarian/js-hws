@@ -15,7 +15,6 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-let favourites = []
 let k = 'key'
 let changePage = document.createElement('button')
 changePage.innerText = 'Перехід на сторінку фейворітс'
@@ -32,6 +31,7 @@ for (let item of users ){
     divWrap.append(div)
     div.append(button)
     button.onclick = () =>{
+       let favourites = JSON.parse(localStorage.getItem(k)) || []
        favourites.push(item)
         localStorage.setItem(k, (JSON.stringify(favourites)))
     }
