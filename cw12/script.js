@@ -29,17 +29,17 @@ then(function (response){
                 return jsonComm
             }).then(comments => {
                 for (let comment of comments) {
-                    if (post.id === comment.id) {
+                    if (post.id === comment.postId) {
                         let divCard = document.createElement('div')
                         divCard.classList.add('comment')
                         divCard.innerHTML = `
-                                        <h3>ID: ${comment.id}</h3>
+                                        <h4>ID: ${comment.id}</h4>
                                         <h4>Name: ${comment.name}</h4>
                                         <h5>Email: ${comment.email}</h5>
                                         <h6>Body: ${comment.body}</h6>
                                         `
                         let closeButton = document.createElement('button')
-                        closeButton.innerText = `to close comments`
+                        closeButton.innerText = `to close comment`
                         divPost.append(divCard,closeButton)
                         closeButton.onclick = () =>{
                             if (divCard){
@@ -50,8 +50,8 @@ then(function (response){
                     }
                 }
             })
+            postButton.disabled = true
         }
-
-
     }
 })
+
