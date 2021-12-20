@@ -5,13 +5,7 @@
 // 6 Каждому посту добавить кнопку/ссылку, при клике на которую происходит переход на страницу post-details.html, которая имеет детальную информацию про текущий пост.
 let container = document.createElement('div')
 container.classList.add('user-container')
-let clearAll = document.createElement('button')
-clearAll.classList.add('clear-all')
-clearAll.innerText = 'To clear all'
-clearAll.onclick = ()=> {
-    localStorage.clear()
-    location.reload()
-}
+
 document.body.append(container)
 
 let users = JSON.parse(localStorage.getItem('k'))
@@ -26,7 +20,7 @@ for (let user of users) {
         <div>phone: ${user.phone} </div>
         <div>website: ${user.website} </div>
     `
-    container.append(userDiv, clearAll)
+    container.append(userDiv)
     for (let keysadress in user.address) {
         if (user.address[keysadress] !== user.address.geo) {
             let addressDiv = document.createElement('div')

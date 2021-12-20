@@ -4,19 +4,12 @@
 // https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
 let postContainer = document.createElement('div')
 postContainer.classList.add('post-container')
-let clearAll = document.createElement('button')
-clearAll.classList.add('clear-all')
-clearAll.innerText = 'to clear all'
-clearAll.onclick = ()=> {
-    localStorage.clear()
-    location.reload()
-}
 document.body.append(postContainer)
 let posts = JSON.parse(localStorage.getItem('j'))
 for (let post of posts){
     let postDiv = document.createElement('div')
     postDiv.classList.add('post-wrap')
-    postContainer.append(postDiv , clearAll)
+    postContainer.append(postDiv)
     postDiv.innerHTML = `
         <div class="post-id">id: ${post.id} </div>
         <div class="post-title">title: ${post.title} </div>
